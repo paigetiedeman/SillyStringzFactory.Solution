@@ -1,0 +1,32 @@
+body{
+  background: #F4A261;
+	font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+span{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:80px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						8px 8px #2A9D8F,
+						20px 20px #000000;
+}
+
+.btn {
+  background-color: #E76F51;
+}
+
+.card {
+  background-color: #2A9D8F;
+}
+
+h5 {
+  color: #2A9D8F;
+}

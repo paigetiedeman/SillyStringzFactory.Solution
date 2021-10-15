@@ -13,11 +13,11 @@
     <h5>Engineer Name</h5>
     @Html.TextBoxFor(model => model.EngineerName, new { @class = "form-control", @required = "required"})
     <br>
-    <h5>Engineer @Html.LabelFor(model => model.Status)</h5>
-    @Html.ListBox("Status", new List<SelectListItem> { 
-      new SelectListItem { Text = "Working", Value = " ⚙️🔨🔧 Working"},
-      new SelectListItem { Text = "Idle", Value = "🕛 Idle"},
-      new SelectListItem { Text = "On Break", Value = "💤 On Break"}
+    <h5>Engineer @Html.LabelFor(model => model.EngineerStatus)</h5>
+    @Html.ListBox("EngineerStatus", new List<SelectListItem> { 
+      new SelectListItem { Text = "⚙️🔨🔧 Working", Value = " ⚙️🔨🔧 Working"},
+      new SelectListItem { Text = "🕛 Idle", Value = "🕛 Idle"},
+      new SelectListItem { Text = "💤 On Break", Value = "💤 On Break"}
       }, new { @class = "form-control"})
       <br>
         <h5>Machine Type:</h5>
