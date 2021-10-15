@@ -5,7 +5,7 @@
 [![Language][languageC-shield]][languageC-url]
 [![MIT License][license-shield]][license-url]
 
-# Project Name
+# Sillystringz Factory
 
 #### This is a C# web application ...
 
@@ -15,7 +15,7 @@
 
 <br>
 
-  <!-- <img src="ProjectName/wwwroot/img/RelationshipTable.png"> -->
+  <!-- <img src="Factory/wwwroot/img/RelationshipTable.png"> -->
  
 </div>
 
@@ -43,11 +43,11 @@ This web application ...
 * _Navigate into the top level directory_
 * _Open in your code editor_
 * _Commit and push your .gitignore file to your repo_
-* _Add the file ProjectName/ProjectName/appsettings.json and insert the following:_
+* _Add the file SillystringzFactory/Factory/appsettings.json and insert the following:_
 ```
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=university;uid=[YOUR-UID];pwd=[YOUR-PASSWORD-HERE];"
+    "DefaultConnection": "Server=localhost;Port=3306;database=paige_tiedeman;uid=[YOUR-UID];pwd=[YOUR-PASSWORD-HERE];"
   }
 }
 ```
@@ -58,7 +58,7 @@ This web application ...
 
 
 ## Steps To Use
-* _In your terminal navigate into ProjectName.Solution/ProjectName_
+* _In your terminal navigate into SillystringzFactory.Solution/Factory_
 * _If Migrations folder is not present run `$ dotnet ef migrations add Initial` to add Migrations folder_
 * _Then run `$ dotnet ef database update` to create the schema_
 * _Run `$ dotnet build` to build the site_
@@ -69,7 +69,14 @@ This web application ...
 ## User Stories
 
 <details>
-<summary> As A ..</summary>
+<summary> As the factory manager..</summary>
+
+* I need to be able to see a list of all engineers, and I need to be able to see a list of all machines.
+* I need to be able to select a engineer, see their details, and see a list of all machines that engineer is licensed to repair. I also need to be able to select a machine, see its details, and see a list of all engineers licensed to repair it.
+* I need to add new engineers to our system when they are hired. I also need to add new machines to our system when they are installed.
+* I should be able to add new machines even if no engineers are employed. I should also be able to add new engineers even if no machines are installed
+As the factory manager, I need to be able to add or remove machines that a specific engineer is licensed to repair. I also need to be able to modify this relationship from the other side, and add or remove engineers from a specific machine.
+* I should be able to navigate to a splash page that lists all engineers and machines. Users should be able to click on an individual engineer or machine to see all the engineers/machines that belong to it.
 
 </details>
 

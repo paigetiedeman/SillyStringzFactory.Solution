@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ProjectName.Models
+namespace Factory.Models
 {
-  public class ProjectNameContext : DbContext
+  public class FactoryContext : DbContext
   {
 
-    public ProjectNameContext(DbContextOptions options) : base(options) { }
+    public FactoryContext(DbContextOptions options) : base(options) { }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
