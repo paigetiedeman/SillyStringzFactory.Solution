@@ -24,7 +24,7 @@ namespace Factory.Controllers
 
     public ActionResult Create()
     {
-      return view();
+      return View();
     }
 
     [HttpPost]

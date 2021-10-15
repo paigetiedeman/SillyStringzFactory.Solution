@@ -15,12 +15,12 @@
     <br>
     <h5>Engineer @Html.LabelFor(model => model.Status)</h5>
     @Html.ListBox("Status", new List<SelectListItem> { 
-      new SelectListItem { Text = "Working", Value = " ⚙️🔨🔧 Working"}
-      new SelectListItem { Text = "Idle", Value = "🕛 Idle"}
+      new SelectListItem { Text = "Working", Value = " ⚙️🔨🔧 Working"},
+      new SelectListItem { Text = "Idle", Value = "🕛 Idle"},
       new SelectListItem { Text = "On Break", Value = "💤 On Break"}
       }, new { @class = "form-control"})
       <br>
-        @Html.LabelFor(model => model.Machine)
+        <h5>Machine Type:</h5>
         @Html.DropDownList("MachineId", null, new { @class = "form-control" })
       <br>
     <input type="submit" value="Add New Engineer" class="btn btn-light"/>

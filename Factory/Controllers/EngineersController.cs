@@ -18,7 +18,7 @@ namespace Factory.Controllers
 
     public ActionResult Create()
     {
-      ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "MachineName");
+      ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "MachineType");
       return View();
     }
 
@@ -26,7 +26,7 @@ namespace Factory.Controllers
     public ActionResult Create(Engineer engineer, int MachineId)
     {
       _db.Engineers.Add(engineer);
-      _db.SaveChange();
+      _db.SaveChanges();
       if (MachineId == 0)
       {
         _db.MachineEngineer.Add(new MachineEngineer() { MachineId = MachineId, EngineerId = engineer.EngineerId });
@@ -39,15 +39,15 @@ namespace Factory.Controllers
     {
       var thisEngineer = _db.Engineers
         .Include(engineer => engineer.JoinEntities)
-        .ThenInclude(join => join.Category)
+        .ThenInclude(join => join.Engineer)
         .FirstOrDefault(engineer => engineer.EngineerId == id);
-      return View(thisMEngineer);
+      return View(thisEngineer);
     }
 
     public ActionResult Edit(int id)
     {
       var thisEngineer = _db.Engineers.FirstOrDefault(engineer => engineer.EngineerId == id);
-      ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "MachineName");
+      ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "MachineType");
       return View(thisEngineer);
     }
 
@@ -66,7 +66,7 @@ namespace Factory.Controllers
     public ActionResult AddMachine(int id)
     {
       var thisEngineer = _db.Engineers.FirstOrDefault(engineer => engineer.EngineerId == id);
-      ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "MachineName");
+      ViewBag.MachineId = new SelectList(_db.Machines, "MachineId", "MachineType");
       return View(thisEngineer);
     }
 

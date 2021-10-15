@@ -9,9 +9,9 @@ namespace Factory.Models
       this.JoinEntities = new HashSet<MachineEngineer>();
     }
 
-    public int MachineID { get; set; }
-    public string MachineName { get; set; }
-    public string Status { get; set; }
+    public int MachineId { get; set; }
+    public string MachineType { get; set; } 
+    public string MachineStatus { get; set; }
     public virtual ICollection<MachineEngineer> JoinEntities { get; set; }
   }
 }
