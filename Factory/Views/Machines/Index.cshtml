@@ -16,12 +16,12 @@
   <div class="card-deck">
     <div class="card text-center mb-3" style="width: 24rem;">
       <div class="card-body">
-        <h5 class="card-title">@Html.ActionLink($"{machine.MachineType}", "Details", new { id = machine.MachineId })</h5>
+        <h5 class="card-title">@Html.ActionLink($"{machine.MachineType}", "Details", new { id = machine.MachineId }, new { @class = "text" })</h5>
           <p class="card-text">@machine.MachineStatus</p>
       </div>
     </div>
   </div>
 }
 <br>
-<p class="btn btn-light">@Html.ActionLink("Add New Machine", "Create")</p>
-<p class="btn btn-light">@Html.ActionLink("Return Home", "Index", "Home")<p>
+<p class="btn btn-light">@Html.ActionLink("Add New Machine", "Create", null, null, new { @class = "text" })</p>
+<p class="btn btn-light">@Html.ActionLink("Return Home", "Index", "Home", null, new { @class = "text" })<p>

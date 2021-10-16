@@ -30,3 +30,19 @@ span{
 h5 {
   color: #2A9D8F;
 }
+
+h3 {
+  font-size: 36px;
+}
+
+.text {
+  color: white;
+}
+
+a.text:hover {
+  color: #264653;
+}
+
+input {
+  margin: 8px;
+}
