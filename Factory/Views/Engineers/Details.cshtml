@@ -7,7 +7,7 @@
 <h3>Engineer Details: @Html.DisplayFor(model => model.EngineerName)</h3>
 <hr>
 
-<h5>Enggineer Status: @Html.DisplayFor(model => model.EngineerStatus)</h5>
+<h5>Engineer Status: @Html.DisplayFor(model => model.EngineerStatus)</h5>
 
 <br>
 @if (@Model.JoinEntities.Count == 0)
@@ -39,7 +39,7 @@ else
   }
 }
 
-<p class="btn btn-light">@Html.ActionLink("Add a Machine", "AddMachine", new { id = Model.EngineerId })</p>
-<p class="btn btn-light">@Html.ActionLink("Back to List", "Index")</p>
-<p class="btn btn-light">@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId })</p>
-<p class="btn btn-light">@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId })</p>
+<p class="btn btn-light">@Html.ActionLink("Add a Machine", "AddMachine", new { id = Model.EngineerId }, new { @class = "text" })</p>
+<p class="btn btn-light">@Html.ActionLink("Back to List", "Index", null, null, new { @class = "text" })</p>
+<p class="btn btn-light">@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId }, new { @class = "text" })</p>
+<p class="btn btn-light">@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId }, new { @class = "text" })</p>

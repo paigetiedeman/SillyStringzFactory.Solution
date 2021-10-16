@@ -18,8 +18,8 @@
     <h4>@Html.Label("Select Machine")</h4>
     @Html.DropDownList("MachineId", null, new { @class = "form-control" })
   </div>
-  <br>
-  <input type="submit" value="Save" class = "btn btn-light"/>
+  
+  <input type="submit" value="Save" class = "btn btn-light text"/>
 }
 
-<p class="btn btn-light">@Html.ActionLink("Back to List", "Index")</p>
+<p class="btn btn-light">@Html.ActionLink("Back to List", "Index", null, null, new { @class = "text" })</p>

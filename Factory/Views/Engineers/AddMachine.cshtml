@@ -16,9 +16,9 @@
     @Html.DropDownList("MachineId", null, new { @class = "form-control" })
     <br>
 
-    <input type="submit" value="Save" class = "btn btn-light"/>
+    <input type="submit" value="Save" class = "btn btn-light text"/>
   </div>
 }
 
-<p class="btn btn-light">@Html.ActionLink("Back to Engineers", "Index")</p>
-<p class="btn btn-light">@Html.ActionLink("Add a New Machine", "Create", "Machines", "Create")</p>
+<p class="btn btn-light">@Html.ActionLink("Back to Engineers", "Index", null, null, new { @class = "text"})</p>
+<p class="btn btn-light">@Html.ActionLink("Add a New Machine", "Create", "Machines", "Create", new { @class = "text"})</p>

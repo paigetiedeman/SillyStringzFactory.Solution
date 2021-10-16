@@ -5,17 +5,15 @@
 [![Language][languageC-shield]][languageC-url]
 [![MIT License][license-shield]][license-url]
 
-# Sillystringz Factory
-
-#### This is a C# web application ...
-
-<br>
+<img src="Factory/wwwroot/img/title.png">
 
 #### _By Paige Tiedeman_
 
 <br>
 
-  <!-- <img src="Factory/wwwroot/img/RelationshipTable.png"> -->
+#### This is a C# web application using CRUD and MySQL databases to store and show machines and corresponding engineers.
+
+<br>
  
 </div>
 
@@ -35,7 +33,7 @@
 
 ## Description
 
-This web application ...
+This web application lets the user add and store machines and corresponding engineers. Users can also connect the engineers to machines.
 
 ## Installation Requirements
 
@@ -43,7 +41,7 @@ This web application ...
 * _Navigate into the top level directory_
 * _Open in your code editor_
 * _Commit and push your .gitignore file to your repo_
-* _Add the file SillystringzFactory/Factory/appsettings.json and insert the following:_
+* _Add the file SillystringzFactory.Solution/Factory/appsettings.json and insert the following:_
 ```
 {
   "ConnectionStrings": {
@@ -63,8 +61,8 @@ This web application ...
 * _Then run `$ dotnet ef database update` to create the schema_
 * _Run `$ dotnet build` to build the site_
 * _Run `$ dotnet run` to start the live server_
-* _Click either button to see all ..._
-* _After clicking add  put in your inputs and hit submit to reveal the lists!_
+* _Click either button to see all engineers or machines_
+* _After clicking add put in your inputs and hit submit to reveal the lists!_
 
 ## User Stories
 

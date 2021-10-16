@@ -18,13 +18,13 @@
   <div class="card-deck">
     <div class="card text-center mb-3" style="width: 24rem;">
       <div class="card-body">
-        <h5 class="card-title">@Html.ActionLink($"{engineer.EngineerName}", "Details", new { id = engineer.EngineerId })</h5>
+        <h5 class="card-title">@Html.ActionLink($"{engineer.EngineerName}", "Details", new { id = engineer.EngineerId }, new { @class = "text" })</h5>
         <p class="card-text">@engineer.EngineerStatus</p>
       </div>
     </div>
   </div>
 }
 
-<p class="btn btn-light">@Html.ActionLink("Add New Engineer", "Create")<p>
-<p class="btn btn-light">@Html.ActionLink("Add a Machine", "AddMachine")<p>
-<p class="btn btn-light">@Html.ActionLink("Return Home", "Index", "Home")<p>
+<p class="btn btn-light">@Html.ActionLink("Add New Engineer", "Create", null, null, new { @class = "text" })<p>
+<p class="btn btn-light">@Html.ActionLink("Add a Machine", "AddMachine", null, null, new { @class = "text" })<p>
+<p class="btn btn-light">@Html.ActionLink("Return Home", "Index", "Home", null, new { @class = "text" })<p>
